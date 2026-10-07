@@ -8,7 +8,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://placement-intelligence-api.onrender.com/api/:splat"
+  to = "https://pathway-placement-api.onrender.com/api/:splat"
   status = 200
   force = true
 

@@ -79,4 +79,4 @@ The concrete endpoints and role protections are defined in `backend/src/routes/`
 
 ## Deployment
 
-Deployment templates are provided for Render (`render.yaml`) and Netlify (`netlify.toml`). Before deploying, configure MongoDB Atlas, production `JWT_SECRET`, administrator credentials, and the frontend origin in the hosting provider’s environment settings. Update the API URL in `netlify.toml` if the Render service URL differs from the configured value. The templates do not create or configure those external services automatically.
+Deployment templates are provided for Render (`render.yaml`) and Netlify (`netlify.toml`). The Render blueprint creates the Node API service `pathway-placement-api`; Netlify proxies `/api/*` requests to `https://pathway-placement-api.onrender.com`. Before deploying, configure MongoDB Atlas, production `JWT_SECRET`, administrator credentials, and the frontend origin in the hosting provider’s environment settings. Update the API URL in `netlify.toml` if the Render service URL differs from the configured value. The templates do not create or configure those external services automatically.
