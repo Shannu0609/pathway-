@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pathway-placement-api
+    name: placement-intelligence-api
     runtime: node
     rootDir: backend
     plan: free
@@ -15,7 +15,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: FRONTEND_URLS
-        sync: false
+        value: https://placementpathstudent.netlify.app
       - key: ADMIN_EMAIL
         sync: false
       - key: ADMIN_PASSWORD
